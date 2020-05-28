@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login / Registration</title>
+  <style media="screen">
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      background: 100% 100%;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    /*navbar css starts here*/
+    .nav_container {
+      width: 100%;
+      box-sizing: border-box;
+      height: 56px;
+      background-color: #12252A;
+      display: grid;
+      grid-template-columns: 10% 32% 52%;
+      padding-top: 5px;
+      padding-left: 5px;
+    }
+
+    /* Navigation links inside nav_container*/
+    .nav_bar {
+      margin-left: 25px;
+      color: white;
+    }
+
+    .nav_bar li {
+      list-style-type: none;
+      display: block;
+      float: left;
+      width: 100px;
+      line-height: 45px;
+      text-align: center
+    }
+
+    .nav_bar a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /*login starts here*/
+    .login_btn {
+      line-height: 45px;
+      margin-left: 650px;
+    }
+
+    .btn {
+      width: 110px;
+      height: 35px;
+      color: yellow;
+      border: 1px solid yellow;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    .btn:hover {
+      background-color: yellow;
+      color: #24252A;
+      border-radius: 5px;
+      border: 1px solid orange;
+      transition-delay: 100ms;
+    }
+
+    /*login/ register ends here*/
+    /*navbar css starts here*/
+    /*lower body css starts here*/
+    .main_body {
+      margin: 2% 30% 0% 20%;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid silver;
+    }
+
+    button {
+      width: 110px;
+      height: 30px;
+      color: green;
+      border: 1px solid green;
+      border-radius: 5px;
+      padding: 5px;
+      margin-left: 5px
+    }
+
+    button:hover {
+      background-color: green;
+      color: white;
+      border-radius: 5px;
+      border: 1px solid white;
+      transition-delay: 100ms;
+    }
+
+    .form_txt_psw_etc {
+      border-radius: 5px;
+      border: 1px solid grey;
+      height:20px;
+      padding:5px;
+    }
+    textarea{
+      overflow-x: auto;
+    }
+
+  </style>
+</head>
+
+<body>
+    <div class="nav_container">
+      <img src="python_banner_150x45.jpg" alt="logo">
+      <nav class="nav_bar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact me</a></li>
+        </ul>
+      </nav>
+
+      <a class="login_btn" href="#"><button class="btn"type="summit" name="button">Login / Register</button></a>
+
+    </div>
+
+    <div class="main_body">
+      <h2 style="color:#DC143C">Contact me</h2>
+      <form action="/" method="get">
+        <br>
+        Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="form_txt_psw_etc"type="text" name="name">
+        <br><br><br>
+        Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="form_txt_psw_etc"type="email" name="email"><br><br><br>
+        Contact no. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="form_txt_psw_etc"type="number" name="contact_number">
+        <br><br><br>
+        Subject to  contact
+        <br>
+        <textarea style="margin:5px;padding:5px" name="comment" rows="5" cols="80" placeholder=""></textarea>
+        <button type="submit" name="button">Submit</button>
+      </form>
+    </div>
+</body>
+
+</html>
